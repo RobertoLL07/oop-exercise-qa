@@ -1,6 +1,8 @@
 const { Shape } = require("../main/shape");
 
-class Triangle extends Shape {
+let exp = Math.pow;
+
+class EqTriangle extends Shape {
     #sideLength;
     constructor(color, filled, side = 1.0) {
         super(color, filled);
@@ -19,7 +21,7 @@ class Triangle extends Shape {
 
     // -------------------------------- //
     getArea() {
-        const area = (Math.sqrt(3) * this.#sideLength ** 2) / 4;
+        const area = (Math.sqrt(3) * exp(this.#sideLength,2)) / 4;
         return area.toFixed(2);
     }
 
@@ -36,4 +38,4 @@ class Triangle extends Shape {
         return `Triangle [ Shape [ color = ${color}, filled = ${filled} ], side = ${this.#sideLength}]`;
     }
 }
-module.exports = { Triangle };
+module.exports = { EqTriangle };
