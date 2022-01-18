@@ -5,9 +5,9 @@ let exp = Math.pow;
 
 class Circle extends Shape {
     #radius;
-    constructor(color, filled) {
+    constructor(color, filled, radius = 1) {
         super(color, filled);
-        this.#radius = 1;
+        this.#radius = radius;
     }
 
     // -------------------------------- //

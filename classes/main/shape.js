@@ -10,24 +10,24 @@ class Shape {
 
     // -------------------------------- //
     getColor() {
-        console.log(`Im color ${this.#color}`)
+        //console.log(`Im color ${this.#color}`)
         return this.#color;
     }
 
     // -------------------------------- //
     setColor(updateColor) {
         this.#color = updateColor;
-        console.log(`Now my color is ${this.#color}`)
+        //console.log(`Now my color is ${this.#color}`)
         return this.#color;
     }
 
     // -------------------------------- //      
     isFilled() {
-        if (this.#filled){
+/*         if (this.#filled){
             console.log('I have something')
         } else {
             console.log('Im empty')
-        }
+        } */
         return this.#filled;
     }
 
