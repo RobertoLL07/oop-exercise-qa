@@ -1,5 +1,5 @@
-let { Triangle } = require("../classes/main_childs/equilateral_triangle")
+let { EqTriangle } = require("../classes/main_childs/equilateral_triangle")
 
-let triangle = new Triangle("black", true, 4.8);
+let triangle = new EqTriangle("black", true, 4.8);
 console.log(triangle.getPerimeter());
 console.log(triangle.getArea());
