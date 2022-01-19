@@ -39,7 +39,7 @@ class Rectangle extends Shape {
 
     // -------------------------------- //
     getPerimeter() {
-        let perimeter = this.width + this.length + this.width + this.length;
+        let perimeter = (this.#width * 2) + (this.#length * 2);
         return perimeter.toFixed(2);
     }
 
