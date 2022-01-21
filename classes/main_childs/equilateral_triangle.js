@@ -2,7 +2,7 @@ const { Shape } = require("../main/shape");
 
 let exp = Math.pow;
 
-class EqTriangle extends Shape {
+class Equilateral_Triangle extends Shape {
     #sideLength;
     constructor(color, filled, side = 1.0) {
         super(color, filled);
@@ -38,4 +38,4 @@ class EqTriangle extends Shape {
         return `Triangle [ Shape [ color = ${color}, filled = ${filled} ], side = ${this.#sideLength}]`;
     }
 }
-module.exports = { EqTriangle };
+module.exports = { Equilateral_Triangle };
