@@ -34,13 +34,13 @@ class Square extends Rectangle {
 
     // -------------------------------- //
     getArea() {
-        let area = exp(this.side, 2);
+        let area = exp(this.length, 2);
         return area.toFixed(2);
     }
 
     // -------------------------------- //
     getPerimeter() {
-        let perimeter = this.side * 4;
+        let perimeter = this.length * 4;
         return perimeter.toFixed(2);
     }
 
