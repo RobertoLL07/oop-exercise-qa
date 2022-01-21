@@ -6,18 +6,20 @@ let exp = Math.pow;
 class Square extends Rectangle {
     constructor(color, filled, side) {
         super(color, filled);
-        this.side = side;
+        this.length = side;
+        this.width = side;
     }
 
     // -------------------------------- //
     getSide() {
-        return this.side.toFixed(2);
+        return this.length.toFixed(2);
     }
 
     // -------------------------------- //
 
-    setSide(updateSideLength) {
-        this.side = updateSideLength;
+    setSide(side) {
+        this.length = side;
+        this.width = side;
     }
 
     // -------------------------------- //
